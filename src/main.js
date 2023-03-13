@@ -1,10 +1,6 @@
 import { createApp } from 'vue'
 import App from './App.vue'
 
-/* Set up using Vue 3 */
-import { createApp } from 'vue'
-import App from './App.vue'
-
 /* import the fontawesome core */
 import { library } from '@fortawesome/fontawesome-svg-core'
 
