@@ -1,9 +1,11 @@
 <script>
 import Hero from './components/Hero.vue';
+import EveryMomentSection from './components/EveryMomentSection.vue';
 
 export default {
   components: {
-    Hero
+    Hero,
+    EveryMomentSection,
   },
   data() {
     return {
@@ -15,6 +17,7 @@ export default {
 
 <template>
   <Hero />
+  <EveryMomentSection />
 </template>
 
 <style lang="scss">

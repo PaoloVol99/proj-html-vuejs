@@ -1,32 +1,14 @@
 @use './partials/reset.scss';
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+// .container {
+//   max-width: 1000px;
+//   margin: 0 auto;
+//   padding: 0 24px;
+// }
 
-a {
-  text-decoration: none;
-  color: currentColor;
-}
-
-menu, ul, ol {
-  list-style: none;
-}
-
-input, button {
-  border: none;
-}
-
-img {
-  max-width: 100%;
-}
-
-.container {
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 0 24px;
+.row {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 html {

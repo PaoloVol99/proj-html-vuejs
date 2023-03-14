@@ -37,22 +37,22 @@ export default {
     </div>
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
 
 .wrapper {
     background-image: url('/img/home-page-slider.jpg');
     background-size: cover;
     background-attachment: fixed;
-    height: 100vh;
+    // height: 100vh;
 
     .main-header {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 26px 80px;
+        padding: 35px 105px;
 
         img {
-            max-width: 340px;
+            max-width: 320px;
         }
         
         .navbar {
@@ -94,7 +94,7 @@ export default {
         align-items: center;
         justify-content: center;
         flex-direction: column;
-        padding: 200px 0 0;
+        padding: 260px 0 380px;
         
         h1 {
             font-size: 64px;
