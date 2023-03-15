@@ -150,6 +150,13 @@ export default {
                 figure {
                     width: 134px;
                     flex-shrink: 0;
+                    transition: all 120ms;
+                    cursor: pointer;
+
+                    &:hover {
+                        transform: scale(1.05);
+                        box-shadow: 2px 2px 10px rgba($color: black, $alpha: 0.5);
+                    }
                 }
             }
 
