@@ -9,8 +9,10 @@ export default {
         <div class="row">
             <div class="col col-8">
                 <h1>every moment counts</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum aperiam omnis ipsum, itaque asperiores cum officia non delectus quos similique pariatur sunt beatae autem.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, praesentium obcaecati itaque laudantium nihil vero culpa mollitia labore consequatur assumenda magnam tempore!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum aperiam omnis ipsum, itaque asperiores
+                    cum officia non delectus quos similique pariatur sunt beatae autem.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, praesentium obcaecati itaque
+                    laudantium nihil vero culpa mollitia labore consequatur assumenda magnam tempore!</p>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas deleniti nihil dolorem eveniet et?</p>
                 <button class="btn btn-yellow">our mission</button>
             </div>
@@ -44,9 +46,8 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-
 section {
-    
+
     .col-8 {
         width: calc((100% / 12) * 8);
         background-color: white;
@@ -92,13 +93,14 @@ section {
         }
 
     }
-    
+
     .col-4 {
         width: calc((100% / 12) * 4);
         background-image: url('/img/home-content-bg-1.jpg');
         padding: 130px 0;
 
     }
+
     .wrapper {
         display: flex;
         flex-direction: column;
@@ -119,6 +121,5 @@ section {
             }
         }
     }
-} 
-
+}
 </style>

@@ -7,12 +7,13 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 /* import font awesome icon component */
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
-import { faHeart } from '@fortawesome/free-regular-svg-icons'
 
 /* import specific icons */
-import { faDollarSign, faGlobe, faUserSecret } from '@fortawesome/free-solid-svg-icons'
+import { faHeart } from '@fortawesome/free-regular-svg-icons'
+import { faDollarSign, faDroplet, faGlobe, faGraduationCap, faStethoscope, faUserSecret } from '@fortawesome/free-solid-svg-icons'
+import { faPagelines } from '@fortawesome/free-brands-svg-icons'
 
 /* add icons to the library */
-library.add(faUserSecret, faHeart, faGlobe, faDollarSign)
+library.add(faUserSecret, faHeart, faGlobe, faDollarSign, faDroplet, faStethoscope, faPagelines, faGraduationCap)
 
 createApp(App).component('font-awesome-icon', FontAwesomeIcon).mount('#app')
