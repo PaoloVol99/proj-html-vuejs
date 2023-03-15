@@ -64,6 +64,7 @@ export default {
 
             li {
                 cursor: pointer;
+                transition: all linear 120ms;
 
                 &:hover {
                     color: goldenrod;
@@ -77,6 +78,7 @@ export default {
                     padding: 0 30px;
                     line-height: 40px;
                     background-color: goldenrod;
+                    transition: all linear 120ms;
 
                     &:hover {
                         background-color: #353841;
@@ -124,6 +126,7 @@ export default {
                 &.btn-white {
                     border: 2px solid white;
                     color: white;
+                    transition: all linear 120ms;
 
                     &:hover {
                         border-color: goldenrod;
@@ -134,6 +137,7 @@ export default {
                 &.btn-yellow {
                     border: 2px solid goldenrod;
                     color: goldenrod;
+                    transition: all linear 120ms;
 
                     &:hover {
                         border-color: white;
