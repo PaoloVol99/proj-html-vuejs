@@ -3,10 +3,22 @@ export default {
     data() {
         return {
             images: [
-                '/img/avada-charity-fair-trade-featured.jpg',
-                '/img/avada-charity-farming-featured.jpg',
-                '/img/avada-charity-shelter-featured.jpg',
-                '/img/avada-charity-vaccines-featured.jpg',
+                {
+                    img: '/img/avada-charity-fair-trade-featured.jpg',
+                    title: 'fair trade',
+                },
+                {
+                    img: '/img/avada-charity-farming-featured.jpg',
+                    title: 'farming',
+                },
+                {
+                    img: '/img/avada-charity-shelter-featured.jpg',
+                    title: 'shelter',
+                },
+                {
+                    img: '/img/avada-charity-vaccines-featured.jpg',
+                    title: 'vaccines',
+                }
             ]
         }
     }
@@ -25,7 +37,10 @@ export default {
             </div>
             <div class="images-wrapper row">
                 <div v-for="(image, i) in images" :key="i" class="col">
-                    <img :src="image" alt="">
+                    <img :src="image.img" alt="">
+                    <div class="bg-gold">
+                        <span>{{ image.title }}</span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -39,6 +54,7 @@ export default {
     flex-direction: column;
     align-items: center;
     padding: 90px 180px;
+    max-width: 1540px;
 
     .title-wrapper {
         margin-bottom: 125px;
@@ -74,6 +90,43 @@ export default {
         .col {
             width: 25%;
             padding: 0 14px;
+            position: relative;
+
+            img {
+                display: block;
+            }
+
+            &:hover .bg-gold{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: white;
+                text-transform: uppercase;
+                font-size: 22px;
+                font-family: 'Montserrat', sans-serif;
+                width: 90%;
+                overflow: hidden;
+
+                span {
+                    display: block;
+                }
+            }
+
+            .bg-gold {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                right: 50%;
+                left: 14px;
+                background-color: rgba($color: goldenrod, $alpha: 0.7);
+                width: 0;
+                cursor: pointer;
+                transition: all linear 100ms;
+                
+                span {
+                    display: none;
+                }
+            }
         }
     }
 }

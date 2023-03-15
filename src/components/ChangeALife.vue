@@ -31,7 +31,7 @@ export default {
     padding: 90px 0;
     background-image: url('/img/home-footer.jpg');
     background-size: cover;
-    background-attachment: fixed;
+    background-position: center;
     color: white;
 
     .container {

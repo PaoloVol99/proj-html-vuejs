@@ -51,6 +51,8 @@ export default {
 <style lang="scss" scoped>
     .section-wrapper {
         background-image: url('/img/home-content-bg-2.jpg');
+        background-size: cover;
+        background-attachment: fixed;
         display: flex;
         flex-direction: column;
         align-items: center;

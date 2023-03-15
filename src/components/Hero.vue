@@ -74,7 +74,7 @@ export default {
                 }
 
                 &:last-child {
-                    padding: 0 22px;
+                    padding: 0 30px;
                     line-height: 40px;
                     background-color: goldenrod;
 

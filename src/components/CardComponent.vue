@@ -32,6 +32,12 @@ export default {
         color: goldenrod;
         font-size: 70px;
         margin-bottom: 18px;
+        cursor: pointer;
+        transition: all linear 120ms;
+
+        &:hover {
+            color: white;
+        }
     }
 
     .btn-yellow {
@@ -43,6 +49,11 @@ export default {
         cursor: pointer;
         background-color: goldenrod;
         color: white;
+        transition: all linear 120ms;
+
+        &:hover {
+            background-color: #353841;
+        }
     }
 
     .paragraph {
