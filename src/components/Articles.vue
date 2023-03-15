@@ -169,6 +169,7 @@ export default {
 
     .container {
         max-width: 1080px;
+        margin: 0 auto;
 
         button {
             line-height: 52px;
