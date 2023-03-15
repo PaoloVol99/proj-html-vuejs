@@ -62,6 +62,7 @@ export default {
             border-radius: 50%;
             background-color: white;
             font-size: 24px;
+            cursor: pointer;
         }
     }
 

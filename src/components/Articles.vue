@@ -186,6 +186,12 @@ export default {
             color: white;
             background-color: #ed6864;
             width: 100%;
+            transition: all linear 120ms;
+            cursor: pointer;
+
+            &:hover {
+                background-color: #418192;
+            }
         }
     }
 }

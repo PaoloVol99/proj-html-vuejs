@@ -84,6 +84,7 @@ export default {
                 &.btn-white {
                     border: 2px solid white;
                     color: white;
+                    transition: all 120ms;
     
                     &:hover {
                         border-color: goldenrod;
