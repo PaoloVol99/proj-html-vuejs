@@ -48,6 +48,8 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+@use '../style/partials/variables.scss' as *;
+
 
 .section-wrapper {
     display: flex;
@@ -55,6 +57,7 @@ export default {
     align-items: center;
     padding: 90px 180px;
     max-width: 1540px;
+    margin: 0 auto;
 
     .title-wrapper {
         margin-bottom: 125px;
@@ -74,7 +77,7 @@ export default {
                 content: '';
                 width: 190px;
                 height: 3px;
-                background-color: goldenrod;
+                background-color: $primary-color;
                 display: block;
                 margin: 30px auto 46px;
             }
@@ -118,7 +121,7 @@ export default {
                 bottom: 0;
                 right: 50%;
                 left: 14px;
-                background-color: rgba($color: goldenrod, $alpha: 0.7);
+                background-color: rgba($color: $primary-color, $alpha: 0.7);
                 width: 0;
                 cursor: pointer;
                 transition: all linear 100ms;

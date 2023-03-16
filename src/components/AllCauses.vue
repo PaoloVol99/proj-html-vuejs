@@ -11,8 +11,9 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+@use '../style/partials/variables.scss' as *;
     .bg-red {
-        background-color: #ed6864;
+        background-color: $secondary-color;
         height: 150px;
         display: flex;
         justify-content: center;
@@ -21,7 +22,7 @@ export default {
         transition: background-color linear 120ms;
 
         &:hover {
-            background-color: #418192;
+            background-color: $secondary-color-hover;
         }
 
         h4 {

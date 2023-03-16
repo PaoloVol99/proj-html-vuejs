@@ -24,6 +24,7 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+@use '../style/partials/variables.scss' as *;
 .section-wrapper {
     display: flex;
     flex-direction: column;
@@ -58,7 +59,7 @@ export default {
                     content: '';
                     width: 190px;
                     height: 3px;
-                    background-color: goldenrod;
+                    background-color: $primary-color;
                     display: block;
                     margin: 30px auto 46px;
                 }
@@ -87,8 +88,8 @@ export default {
                     transition: all 120ms;
     
                     &:hover {
-                        border-color: goldenrod;
-                        color: goldenrod;
+                        border-color: $primary-color;
+                        color: $primary-color;
                     }
                 }
             }

@@ -46,6 +46,9 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+@use '../style/partials/variables.scss' as *;
+
+
 section {
 
     .col-8 {
@@ -63,7 +66,7 @@ section {
                 content: '';
                 width: 190px;
                 height: 3px;
-                background-color: goldenrod;
+                background-color: $primary-color;
                 display: block;
                 margin: 30px 0 46px;
             }
@@ -83,11 +86,11 @@ section {
             cursor: pointer;
 
             &.btn-yellow {
-                background-color: goldenrod;
+                background-color: $primary-color;
                 color: white;
 
                 &:hover {
-                    background-color: #353841;
+                    background-color: $primary-color-hover;
                 }
             }
         }

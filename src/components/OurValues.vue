@@ -49,6 +49,8 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+@use '../style/partials/variables.scss' as *;
+
     .section-wrapper {
         background-image: url('/img/home-content-bg-2.jpg');
         background-size: cover;
@@ -77,7 +79,7 @@ export default {
                     content: '';
                     width: 190px;
                     height: 3px;
-                    background-color: goldenrod;
+                    background-color: $primary-color;
                     display: block;
                     margin: 30px auto 46px;
                 }

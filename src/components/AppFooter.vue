@@ -25,6 +25,7 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+@use '../style/partials/variables.scss' as *;
 .bg-white {
     background-color: white;
     display: flex;
@@ -53,7 +54,7 @@ export default {
     }
 
     .social {
-        color: goldenrod;
+        color: $primary-color;
         display: flex;
         gap: 8px;
 

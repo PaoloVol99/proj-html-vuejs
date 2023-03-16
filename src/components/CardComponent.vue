@@ -21,6 +21,8 @@ export default {
 
 <style lang="scss" scoped>
 
+@use '../style/partials/variables.scss' as *;
+
 .card {
     display: flex;
     flex-direction: column;
@@ -29,7 +31,7 @@ export default {
     text-align: center;
 
     .icon {
-        color: goldenrod;
+        color: $primary-color;
         font-size: 70px;
         margin-bottom: 18px;
         cursor: pointer;
@@ -47,12 +49,12 @@ export default {
         font-size: 14px;
         padding: 10px 24px;
         cursor: pointer;
-        background-color: goldenrod;
+        background-color: $primary-color;
         color: white;
         transition: all linear 120ms;
 
         &:hover {
-            background-color: #353841;
+            background-color: $primary-color-hover;
         }
     }
 

@@ -77,6 +77,8 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+@use '../style/partials/variables.scss' as *;
+
 .section-wrapper {
     display: flex;
     flex-direction: column;
@@ -101,7 +103,7 @@ export default {
                 content: '';
                 width: 190px;
                 height: 3px;
-                background-color: goldenrod;
+                background-color: $primary-color;
                 display: block;
                 margin: 30px auto 46px;
             }
@@ -129,7 +131,7 @@ export default {
             }
 
             h3 {
-                color: goldenrod;
+                color: $primary-color;
                 margin-bottom: 10px;
                 font-size: 20px;
                 font-family: 'Montserrat', sans-serif;
@@ -184,13 +186,13 @@ export default {
             font-family: 'Montserrat', sans-serif;
             font-size: 18px;
             color: white;
-            background-color: #ed6864;
+            background-color: $secondary-color;
             width: 100%;
             transition: all linear 120ms;
             cursor: pointer;
 
             &:hover {
-                background-color: #418192;
+                background-color: $secondary-color-hover;
             }
         }
     }

@@ -39,6 +39,8 @@ export default {
 
 <style lang="scss" scoped>
 
+@use '../style/partials/variables.scss' as *;
+
 .wrapper {
     background-image: url('/img/home-page-slider.jpg');
     background-size: cover;
@@ -67,21 +69,21 @@ export default {
                 transition: all linear 120ms;
 
                 &:hover {
-                    color: goldenrod;
+                    color: $primary-color;
                 }
 
                 &.active {
-                    color: goldenrod;
+                    color: $primary-color;
                 }
 
                 &:last-child {
                     padding: 0 30px;
                     line-height: 40px;
-                    background-color: goldenrod;
+                    background-color: $primary-color;
                     transition: all linear 120ms;
 
                     &:hover {
-                        background-color: #353841;
+                        background-color: $primary-color-hover;
                         color: white;
                     }
                 }
@@ -129,20 +131,20 @@ export default {
                     transition: all linear 120ms;
 
                     &:hover {
-                        border-color: goldenrod;
-                        color: goldenrod;
+                        border-color: $primary-color;
+                        color: $primary-color;
                     }
                 }
 
                 &.btn-yellow {
-                    border: 2px solid goldenrod;
-                    color: goldenrod;
+                    border: 2px solid $primary-color;
+                    color: $primary-color;
                     transition: all linear 120ms;
 
                     &:hover {
                         border-color: white;
                         color: white;
-                        background-color: #353841;
+                        background-color: $primary-color-hover;
                     }
                 }
             }
